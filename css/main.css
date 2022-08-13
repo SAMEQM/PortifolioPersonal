@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+/*-- Import Google Fonts : Work Sans | Light, Regular, Medium, Semibold, Bold, ExtraBold, Black--*/
+:root{
+    --FontPrimary:  'Work Sans', sans-serif;
+    
+    --sTitle: 72px;
+    --sSubTitle: 32px;
+    --sNav: 16px;
+    --sTitlePortifolio: 14px;
+    --sSubTitlePortifolio: 10px;
+    --sTitleNews: 12px;
+    --sSubTitleNews: 10px;
+
+    --cWhite: #fff;
+    --cBlue: #0EB9CB;
+    --cBlack: #000;
+    --cRed: #F33829;
+    --cRose: #C044A5;
+
+    --cSubTitle: #A1A1A1;
+    --cTextCard: #777575;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    font-family: var(--FontPrimary);
+    color: var(--cWhite);
+}
+.bgVideo{
+    position: absolute;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 1;
+}
+.container{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.container nav{
+    position: relative;
+    width: 910px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+nav #brandBx{
+    width: 68px;
+    height: 58px;
+}
+nav #brandBx img{
+    width: 100%;
+    height: 100%;
+}
+nav .menu{
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu .menuItem{
+    font-size: var(--sNav);
+    font-weight: bold;
+}
+nav .menu .active a{
+    color: #0EB9CB;
+}
+nav .menu .menuItem:hover a{
+    transition: 1s;
+    color: var(--cBlue);
+}
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content .name{
+    font-size: var(--sTitle);
+    font-weight: bold;
+    margin-top: 170px;
+    letter-spacing: 2px;
+}
+.content .subName{
+    font-size: var(--sSubTitle);
+    color: var(--cSubTitle);
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+.content .subName .dynamicText{
+    color: var(--cWhite)
+}
+.content .btnGetInTouch{
+    width: 220px;
+    height: 45px;
+    background: var(--cBlue);
+    color: var(--cWhite);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.content .btnGetInTouch:hover{
+    background-color: var(--cRed);
+    transition: 1s;
+}
