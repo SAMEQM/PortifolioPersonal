@@ -13,6 +13,7 @@
 
     --cWhite: #fff;
     --cBlue: #0EB9CB;
+    --cBlurHover: #0bd4eb;
     --cBlack: #000;
     --cRed: #F33829;
     --cRose: #C044A5;
@@ -41,6 +42,7 @@ body{
     width: 100%;
     font-family: var(--FontPrimary);
     color: var(--cWhite);
+    transition-delay: 2s;
 }
 .bgVideo{
     position: absolute;
@@ -61,6 +63,7 @@ body{
     z-index: 1;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 .container nav{
     position: relative;
@@ -70,7 +73,6 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 nav #brandBx{
     width: 68px;
@@ -95,7 +97,7 @@ nav .menu .active a{
 }
 nav .menu .menuItem:hover a{
     transition: 1s;
-    color: var(--cBlue);
+    color: var(--cBlurHover);
 }
 
 
@@ -134,6 +136,69 @@ nav .menu .menuItem:hover a{
     margin-top: 30px;
 }
 .content .btnGetInTouch:hover{
+    background-color: var(--cRed);
+    transition: 1s;
+}
+
+/* Page About --------------------*/
+
+
+.contentAbout{
+    max-width: 910px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.contentAbout .bxImgAbout{
+    width: 325px;
+    height: 325px;
+    background: transparent;
+    margin-top: 100px;
+}
+.contentAbout .bxImgAbout img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.contentAbout .ContentAbout{
+    width: 60%;
+    margin-left: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+.contentAbout .ContentAbout .titlePageAbout{
+    font-size: 12px;
+    font-weight: 600;
+}
+.contentAbout .ContentAbout .namePersonalAbout{
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.contentAbout .ContentAbout .bioAbout{
+    font-size: 14px;
+    margin: 20px 0;
+    width: 400px;
+}
+.contentAbout .ContentAbout .BtnAbout{
+    background: var(--cBlue);
+    color: var(--cWhite);
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    outline: none;
+}
+
+.contentAbout .ContentAbout .BtnAbout:hover{
     background-color: var(--cRed);
     transition: 1s;
 }
