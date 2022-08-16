@@ -37,7 +37,7 @@ a{
     color: white;
 }
 html{
-    transition: 2s ease-in-out;
+    transition: 2sgi ease-in-out;
 }
 body{
     position: fixed;
@@ -101,8 +101,6 @@ nav .menu .menuItem:hover a{
     transition: 1s;
     color: var(--cBlurHover);
 }
-
-
 .content{
     width: 100%;
     height: 100%;
