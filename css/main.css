@@ -36,13 +36,15 @@ a{
     text-decoration: none;
     color: white;
 }
+html{
+    transition: 2s ease-in-out;
+}
 body{
     position: fixed;
     height: 100vh;
     width: 100%;
     font-family: var(--FontPrimary);
     color: var(--cWhite);
-    transition-delay: 2s;
 }
 .bgVideo{
     position: absolute;
@@ -107,6 +109,7 @@ nav .menu .menuItem:hover a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
 }
 .content .name{
     font-size: var(--sTitle);
@@ -150,6 +153,7 @@ nav .menu .menuItem:hover a{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
 }
 .contentAbout .bxImgAbout{
     width: 325px;
